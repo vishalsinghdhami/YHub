@@ -1,0 +1,340 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.heroBanner {
+    background-image: url(../images/bgLine.png);
+}
+.heroBanner h1.title {
+    /* font-family: 'Exo 2'; */
+    font-style: normal;
+    font-weight: 700;
+    /* font-size: 90.8665px; */
+    /* line-height: 109px; */
+    color: #121212;
+}
+
+.button-wrap{
+    background-image: url(../images/buttonbg.png);
+    width: 140px;
+    background-position: center;
+    border-top-right-radius: 8px;
+    text-align: center;
+    padding: 7px 0px 7px 0px;
+    border-bottom-right-radius: 8px;
+    color: white;
+} 
+.button-wrap a{
+    text-decoration: none;
+    color: white;
+}
+.why-hub-container {
+    padding: 75px 0;
+}	
+
+.text-wrap p{
+    padding: 20px 140px
+}	
+.video-sec {
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    width: 100%;
+}
+.video-sec video{
+    width: 700px;
+    height: 350px;
+}
+
+.Thought-text {
+    padding: 88px;
+}
+
+.goals{
+    background-color: #EFF4FF;
+    padding: 25px;
+}
+
+.goal {
+    width: 50%;
+    padding: 19px 20px;
+}
+section.activity {
+    width: 85%;
+    margin-top: 20px;
+    position: relative;
+    margin: -87px auto;
+}
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    animation: marquee 5s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    } 
+    
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .c-logo{
+    width: 100px;
+    height: auto;
+    padding: 20px;
+    margin: 10px 60px;
+}
+.brands-wrap {
+    margin-top: 100px;
+}
+@media only screen and (min-device-width: 300px) and (max-device-width: 769px) {
+    .heroBanner {
+        background-image: url(../images//bgBannerMobile.png);
+    }
+    .Thought-text{
+        display: none;
+    }
+
+    .video-sec  video[poster]{
+        height:100%;
+        width:100%;
+        }
+        .goal {
+            width: 50%;
+            padding: 19px 20px;
+        }
+        section.activity {
+            width: 100%;
+            margin-top: 20px;
+            position: static;
+            margin:  auto;
+        }
+        .brands-wrap {
+            margin-top: 0px;
+        }
+  }
+  .boyGirl{
+    position: relative;
+    width:50vw;
+    margin:35px;
+}
+.boyImage{
+    
+border-radius: 200px;
+width:350px;
+height:80vh;
+
+}
+.girlImage{
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 138px;
+    height:45vh;
+    width:300px;
+    border-radius: 100px 0 100px 100px;
+}
+.description{
+    width:50vw;
+    margin-top:60px;
+    justify-content: center;
+    margin-right:35px ;
+    margin-bottom:50px ;
+}
+.heading{
+
+font-family: 'Exo 2';
+font-style: normal;
+font-weight: 1000;
+font-size: 55px;
+color: #121212;
+}
+.note{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+}
+.notice{
+    margin:13px;
+    font-size: 20px;
+}
+
+
+.buttonLearnMore{
+   
+    background-image: url(../images//bgBannerMobile.png);
+       color: white;
+       width:175px;
+       height:55px;
+       border-radius: 0 12px 12px 0;
+            
+}
+
+
+
+@media(max-width:1200px){
+    .description{
+        margin-right: 10px;
+        width: 30vw;
+        align-items: center;
+    }
+    .boyImage{
+        width:300px;
+        height:80vh;
+        
+        }
+        .girlImage{
+            position: absolute;
+            margin-left: -100px;
+            margin-top: 138px;
+            height:45vh;
+            width:250px;
+            border-radius: 100px 0 100px 100px;
+        }
+}
+@media(max-width: 1000px) {
+
+    .aboutBody{
+        flex-direction: column-reverse;
+    }
+    .boyGirl{
+        width:100vw;
+       
+    }
+   
+        .description{
+            justify-content: center;
+            width: 100vw;
+            margin-left:50px;
+            margin-right:50px;
+            margin-bottom: 20px;
+
+         
+        }
+        .note{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .buttonLearnMore{
+   
+            background-image: url("/imageBackground.png");
+            color: white;
+            width:175px;
+            height:55px;
+            border-radius: 0;
+                 
+     }
+}
+
+/* Navbar design */
+
+.nav {
+  height: 50px;
+  width: 100%;
+  /* background-color: #4d4d4d; */
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  /* color: #fff; */
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #303AAE;
+}
+
+.nav > .nav-links > a:hover {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  color: #DB40CC;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    /* background-color: rgba(0, 0, 0, 0.3); */
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #303AAE;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    /* background-color: #333; */
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+.titl{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 14.4582px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #1F2390;
+}
